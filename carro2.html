@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carro en Renta</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Renta de Carro</h1>
+    <nav>
+      <img src="./img/LOGO.png" height="100px">
+      <ul>
+        <li><a href="index.html">¿Quienes somos?</a></li>
+        <li><a href="index.html">Carros Disponibles</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="property-info">
+      <h2>Range Rover</h2>
+      <p>Desde sortear caminos desafiantes hasta navegar sin esfuerzo, el Range Rover puede manejarlo todo. Combinando capacidades de alto rendimiento y un interior lujoso y premium, el Range Rover es el compañero perfecto para aventuras urbanas y al aire libre. No importa la carretera ni las condiciones meteorológicas, ponte en marcha con un Range Rover y llega a tus destinos con total confianza y con un confort inmejorable. Los detalles lujosos son primordiales en el interior del Range Rover. Su elegante cabina está equipada con instrumentos cromados revestidos de madera y sus lujosos asientos están tapizados con el mejor cuero Oxford. Disfrute del viaje y saboree las comodidades mientras explora nuevos terrenos.</p>
+      <p>Precio por dia: $150</p>
+      <p>Características: 5 ASIENTOS, 4 PUERTAS, AUTOMÁTICA, GASOLINA, AIRE ACONDICIONADO, 2 BOLSAS</p>
+    </section>
+    <section class="row">
+      <div class="column">
+        <img src="./img/Range Rover.jpeg" style="width:100%">
+      </div>
+
+      <div class="column">
+        <img src="./img/RRinterior.jpeg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="./img/RRBOARD.jpeg" style="width:100%">
+      </div>
+  </section>
+  
+
+  <section>
+    <h2>Contacto</h2>
+    <p>Nombre: Nombre del Contacto</p>
+    <p>Email: correo@ejemplo.com</p>
+    <p>Teléfono: XXX-XXXXXX</p>
+  </section>
+
+  <section class="comments-section">
+    <h2>Feedback</h2>
+
+    <ul class="comments-list">
+      <li class="comment">
+        <p>¡Gran carro de lujo!</p>
+        <small>Usuario - Fecha</small>
+      </li>
+      <!-- Agrega más comentarios según sea necesario -->
+    </ul>
+
+    <form class="comment-form" action="#" method="post">
+      <label for="comment">Danos tu retroalimentacion:</label>
+      <textarea id="comment" name="comment" required></textarea>
+      <button type="submit">Enviar retroalimentacion</button>
+    </form>
+  </section>
+
+
+  <footer style="position: fixed; bottom: 0; left: 0; right: 0;">
+    <p>Derechos de Autor © 2024 Renta de Carros</p>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+  <!-- ... Tu código HTML anterior ... -->
+  <footer style="position: fixed; bottom: 0; left: 0; right: 0;">
+    <p>Derechos de Autor © 2024 Renta de Carros</p>
+  </footer>
+</main>
+
+<footer style="position: fixed; bottom: 0; left: 0; right: 0;">
+  <p>Derechos de Autor © 2024 Renta de Carros</p>
+</footer>
+</body>
+</html>
